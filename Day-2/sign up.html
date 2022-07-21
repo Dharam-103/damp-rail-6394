@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(248,246,246);
+        }
+        form{
+            width:30%;
+            height:auto;
+            background-color: white;
+            margin: auto;
+            margin-top: 50px;
+            padding-bottom: 40px;
+        }
+        input{
+            display: block;
+            width:95%;
+            margin: auto;
+            padding: 15px 0px 15px 0px;
+            font-size: 25px;
+            margin-top: 10px;
+            border-radius: 20px;
+            border: 2px solid teal;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+        h1{
+            text-align: center;
+            padding-top: 40px;
+            color: teal;
+            
+        }
+        label{
+            padding-left: 15px;
+            font-size: 25px;
+           
+        }
+        input[type="submit"]{
+            margin-top: 30px;
+            font-size: 30px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+        p{
+            text-align: center;
+            font-size: 25px;
+            
+        }
+       
+    </style>
+</head>
+<body>
+      <form>
+          <h1>Sign Up</h1>
+          <label for="name">Full name</label>
+          <input type="text" placeholder="Enter the name" id="name">
+          <label for="email">Email</label>
+          <input type="email" placeholder="Enter the email" id="email">
+          <label for="password">Password</label>
+          <input type="password" placeholder="Enter the password" id="password">
+          <label for="confirm">Confirm password</label>
+          <input type="password" placeholder="Confirm password" id="confirm">
+          <input type="submit" value="Sign up">
+          <p>Already have an account?<a href="./login.html">Sign in</a></p>
+      </form>
+</body>
+</html>
+
+<script>
+       document.querySelector("form").addEventListener("submit",infoData)
+       let infoArr=JSON.parse(localStorage.getItem("information")) || []
+       function infoData(){
+           event.preventDefault()
+           let infoObj={
+                    Name:document.querySelector("#name").value,
+                    Email:document.querySelector("#email").value,
+                    Password:document.querySelector("#password").value,
+                    confirmPassword:document.querySelector("#confirm").value,
+           }
+
+           if(infoObj.Name=="" || infoObj.Email=="" || infoObj.Password=="" || infoObj.confirmPassword=="")
+           {
+            alert("Fill all input fields")
+           }else{
+             alert("Successful Signup")
+             infoArr.push(infoObj)
+             localStorage.setItem("information",JSON.stringify(infoArr))
+             window.location.href="./login.html"
+           }
+          
+       }
+</script>
