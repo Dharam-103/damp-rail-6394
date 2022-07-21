@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:teal;
+        }
+        form{
+            width:30%;
+            height:auto;
+            background-color: white;
+            margin: auto;
+            margin-top: 70px;
+            padding-bottom: 40px;
+        }
+        input{
+            display: block;
+            width: 95%;
+            margin: auto;
+            padding: 20px 0px 20px 0px;
+            font-size: 25px;
+            padding-left: 10px;
+            border-radius: 20px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        h1{
+            text-align: center;
+            padding-top: 30px;
+            color: teal;
+        }
+        label{
+           font-size: 30px;
+           padding-left: 10px;
+        }
+        p{
+            text-align: center;
+            font-size: 25px;
+        }
+        input[type="submit"]{
+            margin-top: 40px;
+            font-size: 30px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+     <form>
+        <h1>Login</h1>
+        <label>Email</label>
+        <input type="email" placeholder="Enter the email" id="email" required>
+        <label>Password</label>
+        <input type="password" placeholder="Enter password" id="password" required>
+        <input type="submit" value="Sign in">
+        <p>Don't have an account?<a href="./sign up.html">Sign up</a></p>
+     </form>
+</body>
+</html>
+
+<script>
+      let infoData=JSON.parse(localStorage.getItem("information"))
+
+      document.querySelector("form").addEventListener("submit",getData)
+
+       function getData(event){
+         event.preventDefault()
+         let Email=document.querySelector("#email").value 
+         let Password=document.querySelector("#password").value 
+        infoData.forEach(function(el){
+            
+           if(el.Password!=Password || el.Email!=Email )
+           {
+            alert("Wrong Creditential")
+           }else{
+            alert("Successful login")
+            window.location.href="./navbar.html"
+           }
+      });
+
+     }
+     
+</script>
