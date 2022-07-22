@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="bottompart.css">
+
+    
+</head>
+<body>
+     <div class="eight-section">
+        <h1>The right care, at the ready </h1>
+        <p>We've got your back with a range of options to help your family thrive</p>
+     </div>
+     <div class="nineth-section">
+         <div>
+            <img src="https://hellobrightline.s3.amazonaws.com/Final_Connect_redesign_2022_1c464d7e74.gif" alt="Error">
+         </div>
+         <div>
+            <div>
+                <h1>Connect+</h1>
+                <p>Tips and guides for parents and caregivers, interactive exercises, and on-demand chat with a coach so families can get support anytime</p>
+            </div>
+            <div>
+                <h1>Coaching</h1>
+                <p>Skills-based programs led by expert behavioral health coaches to help kids and teens through everyday challenges</p>
+            </div>
+            <div>
+                <h1>Care</h1>
+                <p>Personalized treatment by video visit with child and adolescent psychologists, psychiatrists, speech therapists, and others</p>
+            </div>
+            <button>Become a member</button>
+         </div>
+     </div>
+     <div class="tenth-section">
+        <h1>Get started with Brightline today</h1>
+         <div class="container">
+            <div>
+                <img src="https://hellobrightline.s3.amazonaws.com/For_Families_2x_d42220125f.png" alt="Error">
+            </div>
+            <div>
+                <h1>For Families</h1>
+                 <p>Get support for whatever tough stuff you’re dealing with, from a care team who will always have your back.</p>
+                <button>join now</button>
+            </div>
+            <div>
+                <img src="https://hellobrightline.s3.amazonaws.com/For_Employers_2x_bd587cd26b.svg" alt="Error">
+            </div>
+            <div>
+                <h1>For Employers & Plans</h1>
+                <p>Bring extraordinary behavioral health support to children and families, when and where they need it.</p>
+                <button>For employers</button>
+                <button>For health plans</button>
+            </div>
+         </div>
+     </div>
+      <div class="eleven-section">
+         <div>
+            <h1>Learn about Brightline</h1>
+            <button>View More ></button>
+         </div>
+         <div>
+           <div>
+                <img src="https://hellobrightline.s3.amazonaws.com/Dawn_Member_Spotlight_Blog_Hero_1200x628_1_1deb079790.jpg" alt="Error">
+                <p>FOR EMPLOYERS & PLANS•JAN 18, 2022 </p>
+                <p>“Brightline was there for our family at exactly the right time” — Brightline member spotlight
+                </p>
+            </div>
+            <div>
+                <img src="https://hellobrightline.s3.amazonaws.com/Blog_hero_1_0824634069.png" alt="Error">
+                <p>FOR EMPLOYERS & PLANS•JAN 18, 2022</p>
+                <p>“Brightline was there for our family at exactly the right time” — Brightline member spotlight
+                </p>
+            </div>
+            <div>
+                <img src="https://hellobrightline.s3.amazonaws.com/Blog_Hero_1200x628_be3453f09f.png" alt="Error">
+                <p>FOR EMPLOYERS & PLANS•JAN 18, 2022 </p>
+                <p>“Brightline was there for our family at exactly the right time” — Brightline member spotlight
+                </p>
+            </div>
+         </div>
+      </div>
+      <script>
+        document.querySelector(".eleven-section>div:last-child>div:nth-child(1)").addEventListener("mouseover",entering)
+        document.querySelector(".eleven-section>div:last-child>div:nth-child(1)").addEventListener("mouseout",removing)
+        function entering(){
+          let val= document.querySelector(".eleven-section>div:last-child>div:nth-child(1)>p+p");
+          val.style.textDecoration ="underline";
+        }
+        function removing(){
+            let val= document.querySelector(".eleven-section>div:last-child>div:nth-child(1)>p+p");
+          val.style.textDecoration ="none";
+        }
+        document.querySelector(".eleven-section>div:last-child>div:nth-child(2)").addEventListener("mouseover",entering2)
+        document.querySelector(".eleven-section>div:last-child>div:nth-child(2)").addEventListener("mouseout",removing2)
+        function entering2(){
+          let val= document.querySelector(".eleven-section>div:last-child>div:nth-child(2)>p+p");
+          val.style.textDecoration ="underline";
+        }
+        function removing2(){
+            let val= document.querySelector(".eleven-section>div:last-child>div:nth-child(2)>p+p");
+          val.style.textDecoration ="none";
+        }
+        document.querySelector(".eleven-section>div:last-child>div:nth-child(3)").addEventListener("mouseover",entering3)
+        document.querySelector(".eleven-section>div:last-child>div:nth-child(3)").addEventListener("mouseout",removing3)
+        function entering3(){
+          let val= document.querySelector(".eleven-section>div:last-child>div:nth-child(3)>p+p");
+          val.style.textDecoration ="underline";
+        }
+        function removing3(){
+            let val= document.querySelector(".eleven-section>div:last-child>div:nth-child(3)>p+p");
+          val.style.textDecoration ="none";
+        }
+
+      </script>
+</body>
+</html>

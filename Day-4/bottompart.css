@@ -1,0 +1,129 @@
+/* eight section related css */
+.eight-section{
+     width:40%;
+     height: 150px;
+     text-align: center;
+     margin: auto;
+}
+.eight-section>p{
+    font-size: 20px;
+    color: teal;
+}
+/* nineth-section related css */
+.nineth-section{
+  display: flex;
+}
+.nineth-section>div:first-child{
+   width:40%;
+   margin-left: 10%;
+}
+.nineth-section>div:first-child>img{
+    width:100%;
+}
+.nineth-section>div:last-child{
+   width:40%;
+}
+.nineth-section>div:last-child>div{
+    width:60%;
+    margin-left: 10%;
+}
+.nineth-section>div:last-child>div>p{
+     font-size: 20px;
+     line-height: 25px;
+}
+.nineth-section>div:last-child>div>h1{
+    color: teal;
+}
+.nineth-section>div:last-child>button{
+    margin-left: 10%;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: teal;
+    color:white;
+    border-radius: 40px;
+    border: 0;
+    cursor: pointer;
+}
+.nineth-section>div:last-child>button:hover{
+    background-color:black;
+}
+/* tenth section related css */
+.tenth-section>h1{
+    text-align: center;
+    margin-top: 100px;
+    color: teal;
+}
+.container{
+    width:70%;
+    height:auto;
+    margin:auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto auto;
+    column-gap: 2px;
+    row-gap: 20px;
+}
+.container>div>img{
+    width:100%;
+}
+.container>div:nth-child(even){
+    background-color:#fff3ce ;
+    padding-left: 10%;
+}
+.container>div:nth-child(even)>p{
+    width:85%;
+    line-height: 25px;
+    color: teal;
+}
+.container>div:nth-child(even)>button{
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #fff3ce;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.container>div:nth-child(even)>button:hover{
+    color: white;
+    background-color: teal;
+    border: none;
+}
+.container>div:nth-child(even)>button+button{
+    margin-left: 20px;
+}
+/* eleven section css */
+.eleven-section{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 100px;
+}
+.eleven-section>div:first-child{
+  display: flex;
+  justify-content: space-between;
+}
+.eleven-section>div:first-child>button{
+    font-size: 20px;
+    color: teal;
+    background-color: white;
+    cursor: pointer;
+    border: 0;
+}
+.eleven-section>div:last-child{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,auto);
+    gap: 20px;
+}
+.eleven-section>div:last-child>div>img{
+    width:100%;
+}
+img+p{
+    font-weight: bold;
+}
+p+p{
+    font-size: 25px;
+}
+.eleven-section>div:last-child>div{
+    cursor: pointer;
+}
