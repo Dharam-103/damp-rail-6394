@@ -1,0 +1,222 @@
+/* first section related styling */
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.first-section{
+    height:auto;
+    display: flex;
+}
+.first-section>div:last-child{
+    width:60%;
+}
+
+.first-section>div:first-child{
+    width:40%;
+    height: auto;
+    margin-top: 20%;
+    padding-left: 5%;
+}
+.first-section>div:last-child>img{
+   width:100%;
+   height: 800px; 
+}
+.first-section>div:first-child>p:first-child{
+    font-size: 50px;
+}
+.first-section>div:first-child>p+p{
+    font-size: 18px;
+    padding-top: 30px;
+    line-height: 30px;
+    color: teal;
+}
+.first-section>div:first-child>p+button{
+    margin-top: 50px;
+    padding: 20px 30px;
+    background-color: teal;
+    color: white;
+    border-radius: 40px;
+    font-size: 20px;
+    border: 0;
+    cursor: pointer;
+}
+/* second section css related styling */
+.second-section{
+    width:62%;
+    height:auto;
+    margin: auto;
+    text-align: center;
+    margin-top: 150px;
+}
+.second-section>div>p:first-child{
+    font-size: 40px;
+    word-spacing: 5px;
+}
+.second-section>div>p+p{
+    padding-top: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    color:teal;
+}
+/* third section related css */
+.third-section{
+    margin-top: 80px;
+    display: flex;
+}
+.third-section>div:first-child{
+    width:40%;
+    margin-left: 150px;
+}
+.third-section>div:first-child>img{
+    width:100%;
+}
+.third-section>div:last-child{
+    padding:100px 0px 0px 100px;
+    width:40%;
+}
+.third-section>div:last-child>p{
+   line-height: 30px;
+   width: 80%; 
+   font-size: 20px;
+}
+.third-section>div:last-child>ul{
+    width:70%;
+}
+.third-section>div:last-child>ul>li{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.third-section>div:last-child>button{
+    margin-top: 50px;
+    padding: 20px 30px;
+    background-color: teal;
+    color:white;
+    font-size: 20px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+}
+/* forth section css code */
+.fourth-section{
+   text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    width:55%;
+}
+.fourth-section>p:nth-child(2){
+   font-size: 40px;
+   font-weight: bold;
+}
+.fourth-section>p{
+    padding-top: 20px;
+}
+.fourth-section>p:last-child{
+    font-size: 20px;
+    color: teal;
+}
+/* fifth section related css */
+.fifth-section{
+   display: flex;
+}
+.fifth-section>div:first-child{
+    width: 40%;
+    margin-left: 15%;
+    margin-top: 50px;
+}
+.fifth-section>div:first-child>div{
+    width:60%;
+    margin-top: 10px;
+    margin-left: 15%;
+}
+.fifth-section>div:first-child>div>p{
+    font-size: 17px;
+    line-height: 25px;
+    color: teal;
+}
+.fifth-section>div:first-child>div>h1{
+    color: teal;
+}
+.fifth-section>div:first-child>div:nth-child(4)>button{
+    padding: 10px 20px;
+    color: teal;
+    font-size: 17px;
+    background-color: white;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.fifth-section>div:first-child>div:nth-child(4)>button:hover{
+    background-color: teal;
+    color: white;
+    border: 0;
+}
+.fifth-section>div:last-child{
+    width: 40%;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+.fifth-section>div:last-child>img{
+    width:100%;
+}
+/* sixth section related session */
+.sixth-section{
+    width:55%;
+    margin: auto;
+    text-align: center;
+    margin-top: 10%;
+}
+.sixth-section>p{
+   font-size: 20px;
+   padding-top: 20px;
+}
+/* seventh section related css */
+.seventh-section{
+     width:90%;
+    height:auto;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+}
+.seventh-section>div:first-child{
+    width:50%;
+}
+.seventh-section>div:first-child>img{
+    width: 100%;
+}
+.seventh-section>div:last-child{
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,auto);
+    gap:20px;
+    margin-left: 20px;
+}
+.seventh-section>div:last-child>div>img{
+    width: 20%;
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+}
+.seventh-section>div:last-child>div>h4{
+    text-align: center;
+    font-size: 30px; 
+    padding-top: 30px;
+}
+.seventh-section>div:last-child>div>button{
+   display: block;
+   margin: auto;
+   padding: 10px 20px;
+   color: teal;
+   font-size: 17px;
+   border-radius: 30px;
+   cursor: pointer;
+   background-color: white;
+}
+.seventh-section>div:last-child>div>button:hover{
+    background-color: teal;
+    color: white;
+    border: 0;
+}
+
